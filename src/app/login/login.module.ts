@@ -3,16 +3,20 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
 import { LoginComponent } from './login.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     LoginComponent,
-    LoginModalComponent
+    LoginModalComponent,
   ],
   imports: [
     BrowserModule,
     LoginModalComponent,
-    NgbModal
+    NgbModal,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [LoginComponent]

@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './../app-routing.module';
 import { HomeComponent } from './../home/home.component';
 import { ContactComponent } from './../contact/contact.component';
 import { AboutComponent } from './../about/about.component';
@@ -7,7 +8,6 @@ import { RegisterComponent } from './../register/register.component';
 import { MainBulletJournalComponent } from './main-bullet-journal.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,12 +18,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavComponent,
     ContactComponent,
     AboutComponent,
-    HomeComponent,
-    ReactiveFormsModule
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [MainBulletJournalComponent]
