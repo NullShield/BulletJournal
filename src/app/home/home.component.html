@@ -1,4 +1,24 @@
-<p>
-  home works!
-</p>
-<button (click)="firstClick()"></button>
+
+<div>
+  <div>
+      <button (click)="onSpread()" >
+          Spreads/Collections
+      </button>
+      <app-spreads *ngIf="btnSpread" ></app-spreads>
+  </div>
+
+  <div>
+      <button (click)="onTracks()" >
+          Trackers
+      </button>
+      <app-trackers *ngIf="btnTracks" ></app-trackers>
+  </div>
+
+  <div>
+      <button (click)="onJourn()" >
+          Journaling
+      </button>
+      <app-journaling *ngIf="btnJourn" ></app-journaling>
+  </div>
+</div>
+
