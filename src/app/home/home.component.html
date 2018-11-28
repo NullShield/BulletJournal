@@ -1,24 +1,17 @@
 
-<div>
-  <div>
-      <button (click)="onSpread()" >
-          Spreads/Collections
-      </button>
-      <app-spreads *ngIf="btnSpread" ></app-spreads>
-  </div>
+<div class="homeBody">
+  <div class="btnTypes">
 
-  <div>
-      <button (click)="onTracks()" >
-          Trackers
-      </button>
-      <app-trackers *ngIf="btnTracks" ></app-trackers>
-  </div>
+      <a href="#" class="action-button shadow animate blue" (click)="onSpread()" >Spreads/Collections</a>
 
-  <div>
-      <button (click)="onJourn()" >
-          Journaling
-      </button>
-      <app-journaling *ngIf="btnJourn" ></app-journaling>
+      <a href="#" class="action-button shadow animate yellow" (click)="onTracks()" >Trackers</a>
+
+      <a href="#" class="action-button shadow animate green" (click)="onJourn()" >Journaling</a>
+
   </div>
 </div>
-
+<div class="appReferences">
+    <app-journaling *ngIf="btnJourn" ></app-journaling>
+    <app-trackers *ngIf="btnTracks" ></app-trackers>
+    <app-spreads *ngIf="btnSpread" ></app-spreads>
+</div>

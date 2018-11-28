@@ -1,0 +1,9 @@
+li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: .8em;
+
+  &:hover {
+      background: #82BF56;
+  }
+}
